@@ -99,7 +99,7 @@ class App extends Component {
   onButtonSubmit = () =>  {
     this.setState({imageUrl: this.state.input})
     // fetch("https://api.clarifai.com/v2/models/face-detection/outputs", returnClarifaiRequestOptions(this.state.input))
-      fetch('https://face-recognition-backend-9z6t.onrender.com/imageurl', {
+      fetch('https://face-recognition-backend-grpc.onrender.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -111,7 +111,7 @@ class App extends Component {
         //   console.log('hi', response.outputs[0].data.regions[0].region_info.bounding_box)
         .then(response => {
           if(response) {
-            fetch('https://face-recognition-backend-9z6t.onrender.com/image', {
+            fetch('https://face-recognition-backend-grpc.onrender.com/image', {
               method: 'put',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({
