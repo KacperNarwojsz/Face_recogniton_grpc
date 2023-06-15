@@ -1,8 +1,8 @@
 const { response } = require('express');
 
 const returnClarifaiRequestOptions = (imageUrl) => {
-    const PAT = process.env.API_PAT;
-    const USER_ID = process.env.API_USER_ID;       
+    const PAT = 'f67d7c5be1404a86ab4d4419348ce69a';
+    const USER_ID = 'iwbtwd9wyli4on7kn';      
     const APP_ID = 'test';
     // const MODEL_ID = 'face-detection';   
     const IMAGE_URL = imageUrl;
