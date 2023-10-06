@@ -9,40 +9,6 @@ import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import './App.css';
 
-// const returnClarifaiRequestOptions = (imageUrl) => {
-//   const PAT = 'f67d7c5be1404a86ab4d4419348ce69a';
-//   const USER_ID = 'iwbtwd9wyli4on7kn';       
-//   const APP_ID = 'test';
-//   // const MODEL_ID = 'face-detection';   
-//   const IMAGE_URL = imageUrl;
-
-//   const raw = JSON.stringify({
-//     "user_app_id": {
-//         "user_id": USER_ID,
-//         "app_id": APP_ID
-//     },
-//     "inputs": [
-//         {
-//             "data": {
-//                 "image": {
-//                     "url": IMAGE_URL
-//                 }
-//             }
-//         }
-//     ]
-//   });
-
-//   const requestOptions = {
-//     method: 'POST',
-//     headers: {
-//         'Accept': 'application/json',
-//         'Authorization': 'Key ' + PAT
-//     },
-//     body: raw
-//   };
-//   return requestOptions
-// }
-
 const initialState = {
   input: '',
   imageUrl: '',
@@ -57,7 +23,6 @@ const initialState = {
     joined: ''
   }
 }
-
 class App extends Component {
   constructor() {
     super(); 
