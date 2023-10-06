@@ -5,7 +5,7 @@ import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Logo from './components/Logo/Logo';
-import Rank from './components/Rank/Rank';
+// import Rank from './components/Rank/Rank';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import './App.css';
 
@@ -47,7 +47,7 @@ const initialState = {
   input: '',
   imageUrl: '',
   box: {},
-  route: 'signin',
+  route: 'home',
   isSignedIn: false,
   user: {
     id: '',
@@ -151,7 +151,7 @@ class App extends Component {
         {route === 'home' 
           ? <div>
               <Logo />
-              <Rank name={this.state.user.name} entries={this.state.user.entries} />
+              {/* <Rank name={this.state.user.name} entries={this.state.user.entries} /> */}
               <ImageLinkForm 
                 onInputChange={this.onInputChange} 
                 onButtonSubmit={this.onButtonSubmit} 
